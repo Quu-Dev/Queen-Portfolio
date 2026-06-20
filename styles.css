@@ -1689,20 +1689,32 @@ footer {
 }
 
 .logo-placeholder {
-  width: 100%;
-  aspect-ratio: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--color-white);
-  text-align: center;
-  background: linear-gradient(135deg, #2D6A4F 0%, #1F3D2B 100%);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  letter-spacing: -2px;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: #fff;
+}
+
+.logo-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #fff;
+    overflow: hidden;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-card:hover img {
+    transform: scale(1.05);
 }
 
 .logo-card:hover .logo-placeholder {
@@ -1710,25 +1722,6 @@ footer {
   filter: brightness(1.1);
 }
 
-.logo-placeholder-1 {
-  background: linear-gradient(135deg, #B7E4C7 0%, #2D6A4F 100%);
-  color: var(--color-primary-dark);
-}
-
-.logo-placeholder-2 {
-  background: linear-gradient(135deg, #2D6A4F 0%, #1F3D2B 100%);
-  color: var(--color-primary-soft);
-}
-
-.logo-placeholder-3 {
-  background: linear-gradient(135deg, #1F3D2B 0%, #2D6A4F 100%);
-  color: var(--color-primary-soft);
-}
-
-.logo-placeholder-4 {
-  background: linear-gradient(135deg, #F8F9FA 0%, #CED4DA 100%);
-  color: var(--color-primary-mid);
-}
 
 .logo-info {
   padding: 1.2rem var(--space-md);

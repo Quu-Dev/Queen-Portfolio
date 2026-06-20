@@ -1,85 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Queen S. Villarin, a Front-end Web Developer & UI/UX Designer with 2+ years of experience in responsive web design, front-end implementation, and WordPress management.">
+  <title>Queen S. Villarin — Front-end Developer & UI/UX Designer</title>
+  
+  <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-    <nav>
-        <div class="logo">
-        <img src="img/common/logo.svg" alt="">
-        </div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-        <span class="icon">☰</span>
+  <!-- Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        queen.villarin
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-secondary nav-btn">Let's Talk</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <i data-lucide="menu"></i>
         </button>
-        <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact Us</a></li>
-        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu">
+    <nav class="mobile-nav-links">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#gallery" class="mobile-link">Gallery</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="btn btn-primary mobile-btn">Let's Talk</a>
     </nav>
-    </header>
+  </div>
 
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <span class="badge">Available for freelance & full-time roles</span>
+            <h1 class="hero-title">
+              Turning ideas into <span class="text-accent">responsive websites </span> <span class="text-accent-secondary"> through design, </span>and front-end development.
+            </h1>
+            <p class="hero-description">
+              Hello, I'm Queen S. Villarin, a Front-end Developer and UI Designer with experience in creating responsive websites, user-friendly interfaces, and modern web layouts using Figma, HTML, CSS, and WordPress.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                View Projects
+                <i data-lucide="arrow-up-right" class="btn-icon"></i>
+              </a>
+              <a href="#about" class="btn btn-tertiary">
+                More about me
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-illustration-container reveal">
+            <div class="hero-illustration-wrapper">
+              <div class="hero-grid-pattern"></div>
+              <!-- <img src="assets/img/hero_vector.png" alt="Queen S. Villarin Portrait Illustration" class="hero-vector-img"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator reveal">
+        <span class="scroll-text">Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="grid grid-2-col">
+          <div class="section-header reveal">
+            <span class="section-subtitle">01 / ABOUT ME</span>
+            <h2 class="section-title">Bridging creative vision and technical execution.</h2>
+          </div>
+          <div class="about-content reveal">
+            <p class="paragraph-lead">
+              I specialize in designing intuitive user interfaces and building them into responsive, high-performance web applications.
+            </p>
+            <p class="paragraph-body">
+              I am a Front-end Web Developer and UI/UX Designer with 2+ years of experience specializing in responsive web design, front-end implementation, and WordPress management. I focus on bridging the gap between functional layout structure and modern visual aesthetics to create highly user-friendly digital products.
+            </p>
+            <p class="paragraph-body">
+              Using Figma for prototyping and interface design, combined with modern HTML, CSS, JavaScript, and WordPress, I build high-performance websites. My methodology ensures that every project is responsive, accessible, and structured for optimal usability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="mv-section">
-        <div class="mv-content">
-            <div class="mv-l">
-                <h6>Hi, I’m</h6>
-                <h1>Queen S. Villarin</h1>
-                <h2>UI/UX Designer & Web Developer</h2>
-                <p>Experienced Web Designer with 2 years of industry experience, 
-                specializing in clean UI design, mobile optimization, and user-friendly content management. <br><br>
-                Skilled in using Figma for design, HTML/CSS for development, and WordPress for dynamic website integration.</p>
-                <div class="btn-container">
-                    <a href="#" class="btn-dl">DOWNLOAD RESUME<i class="fa-solid fa-file-arrow-down"></i></a>
-                    <a href="#" class="btn-contact">CONTACT US<i class="fa-solid fa-phone"></i></a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding bg-mint-soft">
+      <div class="container">
+        <div class="section-header reveal text-center-desktop">
+          <span class="section-subtitle">02 / EXPERTISE</span>
+          <h2 class="section-title">My capabilities and tools</h2>
+        </div>
+        
+        <div class="skills-grid reveal">
+          <!-- Web Dev Card -->
+          <div class="skills-card">
+            <div class="skills-icon-wrap">
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Writing clean, semantic code and managing publishing systems to deliver robust web projects.</p>
+            <ul class="skills-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>WordPress</li>
+            </ul>
+          </div>
+
+          <!-- Design Tools Card -->
+          <div class="skills-card">
+            <div class="skills-icon-wrap">
+              <i data-lucide="palette"></i>
+            </div>
+            <h3>Design & WP Tools</h3>
+            <p>Utilizing industry-standard tools to craft mockups, customize themes, and manage content types.</p>
+            <ul class="skills-tags">
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Canva</li>
+              <li>Elementor</li>
+              <li>Custom Post Type UI</li>
+            </ul>
+          </div>
+
+          <!-- Design Skills Card -->
+          <div class="skills-card">
+            <div class="skills-icon-wrap">
+              <i data-lucide="layout"></i>
+            </div>
+            <h3>Design Skills</h3>
+            <p>Designing user-friendly interfaces, mapping wireframes, and ensuring visual layout consistency.</p>
+            <ul class="skills-tags">
+              <li>UI/UX Design</li>
+              <li>Responsive Web Design</li>
+              <li>Wireframing</li>
+              <li>Layout Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="projects-header grid grid-2-col align-end">
+          <div class="section-header reveal">
+            <span class="section-subtitle">03 / SELECTED WORKS</span>
+            <h2 class="section-title">Case studies and digital creations</h2>
+          </div>
+          <div class="projects-intro reveal">
+            <p class="paragraph-body">A curated collection of web applications and interactive systems that combine user-first UX/UI design with robust front-end architectures.</p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <div class="project-overlay"></div>
+              <div class="moodboard-container proj-bg-1">
+                <img src="assets/img/moodboard.png" alt="iDate Revival PH Moodboard Design" class="moodboard-img" loading="lazy">
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">01</span>
+                <div class="project-tech">
+                  <span>Figma</span>
                 </div>
+              </div>
+              <h3 class="project-card-title">iDate Revival PH Landing Page</h3>
+              <div class="project-details-list" style="margin-bottom: var(--space-sm); font-size: 0.9rem; color: var(--color-text-muted);">
+                <div style="margin-bottom: 0.2rem;"><strong>Project Type:</strong> Website Design / Game Website Landing Page</div>
+                <div style="margin-bottom: 0.2rem;"><strong>Role:</strong> UI Designer, Game Client Developer</div>
+                <div><strong>Status:</strong> Initial Design / Team-enhanced Final Version</div>
+              </div>
+              <p class="project-card-desc">Designed a highly interactive and visually rich game landing page. Crafted visual mockups, UI elements, and structural game character presentation layouts in Figma, aligning with development handoff specifications for the final team-integrated client version.</p>
+              <a href="#" class="project-link">
+                Explore Design
+                <i data-lucide="arrow-right"></i>
+              </a>
             </div>
-            <div class="mv-r">
-                <img src="img/home/img01.svg" class="mv-img" alt="mv-">
-            </div>
+          </article>
 
-        </div>
-    </div>
-
-    <div class="about-section">
-        <div class="about-content">
-            <div class="about-l">
-            <h2>ME, MYSELF AND I</h2>
-            <h1>About Me</h1>
-            <p>Hi! I'm Queen Villarin, a Web Developer from Quezon City who loves turning pixels into responsive, user-friendly websites. With 2 years of experience in UI/UX design, WordPress, and front-end development, I craft digital experiences that look great and feel effortless. <br><br>
-            I work with Figma, HTML/CSS, and JavaScript, and I’m always exploring new ways to make interfaces cleaner and faster. When I’m not coding, you’ll find me refining layouts or browsing Sankou for design inspiration.</p>
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <div class="project-overlay"></div>
+              <div class="project-image-placeholder ">
+                <video class="project-video" autoplay muted loop playsinline>
+                  <source src="assets/video/best_design.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
-            <div class="about-r">
-                <div class="gallery">
-                <img src="img/home/img02.jpg" alt="me">
-                <img src="img/home/img03.jpg" alt="me">
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">02</span>
+                <div class="project-tech">
+                  <span>Figma</span> 
+                  <span>CSS Variables</span>
+                  <span>HTML</span>
+                  <span>WordPress</span>
                 </div>
+              </div>
+              <h3 class="project-card-title">Japanese Dessert Website Concept</h3>
+              <p class="project-card-desc">A personal web design concept inspired by traditional Japanese desserts and modern café aesthetics. Designed in Figma and developed using HTML and CSS, focusing on visual hierarchy, typography, image presentation, and responsive user experience.</p>
+              <a href="#" class="project-link">
+                Explore Design
+                <i data-lucide="arrow-right"></i>
+              </a>
             </div>
-        </div>
-    </div>
+          </article>
 
-    <div class="works-section">
-        <div class="works-content">
-            <div class="works-header">
-                <h2>My works</h2>
-                <h1>project</h1>
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-image-container">
+              <div class="project-overlay"></div>
+              <div class="project-image-placeholder proj-bg-3">
+                <div class="project-mockup-details">
+                  <span class="mockup-tag">eCommerce UI</span>
+                  <span class="mockup-title">LUMINA STORE</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-num">03</span>
+                <div class="project-tech">
+                  <span>Figma</span>
+                  <span>Vanilla JS</span>
+                  <span>WordPress Headless</span>
+                  <span>GSAP</span>
+                </div>
+              </div>
+              <h3 class="project-card-title">Lumina Digital Storefront</h3>
+              <p class="project-card-desc">A premium checkout-optimized eCommerce experiment focusing on elegant layout transitions, minimal screen clutter, and extremely lightweight client-side state handling.</p>
+              <!-- <a href="#" class="project-link">
+                Explore Case Study
+                <i data-lucide="arrow-right"></i>
+              </a> -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding bg-mint-soft">
+      <div class="container">
+        <div class="grid grid-2-col">
+          <div class="section-header reveal">
+            <span class="section-subtitle">04 / PATHWAY</span>
+            <h2 class="section-title">Professional experience timeline</h2>
+            <p class="paragraph-body header-desc">A log of my engineering and interface design journey, developing projects and scaling interfaces with industry agencies.</p>
+          </div>
+          
+          <div class="timeline reveal">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-time">2026 — Present</div>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Volunteer Client Developer / Website Designer Community
+                  <br> Game Server Project</h3>
+                <h4 class="timeline-company">Community Game Server Project</h4>
+                <p class="timeline-desc">Handling client-side development, asset management, and technical support for a community game server:</p>
+                <ul class="timeline-bullets" style="list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.55;">
+                  <li style="margin-bottom: 0.4rem;">Designed the initial website layout and visual direction before it was enhanced by the team.</li>
+                  <li style="margin-bottom: 0.4rem;">Imported and integrated new in-game assets into the game client.</li>
+                  <li style="margin-bottom: 0.4rem;">Assisted in checking client-side issues, login concerns, gameplay bugs, and asset-related updates.</li>
+                  <li style="margin-bottom: 0.4rem;">Coordinated with the team during maintenance, updates, and server issue reports.</li>
+                  <li style="margin-bottom: 0.4rem;">Prepared community announcements for technical issues, events, and maintenance updates.</li>
+                  <li style="margin-bottom: 0;">Supported clan-related features, event banners, and player-facing updates.</li>
+                </ul>
+              </div>
             </div>
 
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-time">November 2023 — Present</div>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Web Developer</h3>
+                <h4 class="timeline-company">Rightcore Inc. – Makati City</h4>
+                <p class="timeline-desc">Delivering responsive websites and user-friendly digital experiences:</p>
+                <ul class="timeline-bullets" style="list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.55;">
+                  <li style="margin-bottom: 0.4rem;">Delivered 10+ responsive website projects by converting Figma designs into functional front-end pages using HTML, CSS, and JavaScript.</li>
+                  <li style="margin-bottom: 0.4rem;">Created wireframes, mockups, and interactive prototypes aligned with project requirements.</li>
+                  <li style="margin-bottom: 0.4rem;">Managed and updated WordPress websites, including theme customization, layout adjustments, and Custom Post Type UI configuration.</li>
+                  <li style="margin-bottom: 0.4rem;">Collaborated with developers to ensure smooth handoff from design to fully functional websites.</li>
+                  <li style="margin-bottom: 0;">Improved user experience through refined layouts, typography, spacing, and color consistency.</li>
+                </ul>
+              </div>
+            </div>
 
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-time">February 2023 — May 2023</div>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Software Engineer Intern</h3>
+                <h4 class="timeline-company">Manulife IT Delivery Center Asia Inc. (MITDC) – Makati City</h4>
+                <p class="timeline-desc">Assisted in design implementation and frontend support:</p>
+                <ul class="timeline-bullets" style="list-style-type: disc; padding-left: 1.2rem; margin-top: 0.5rem; font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.55;">
+                  <li style="margin-bottom: 0.4rem;">Assisted senior developers and analysts in designing and implementing a web-based system project.</li>
+                  <li style="margin-bottom: 0.4rem;">Supported coding, debugging, and testing tasks for front-end and back-end components.</li>
+                  <li style="margin-bottom: 0;">Helped ensure proper layout, functionality, and essential features were implemented according to project requirements.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Selected Works Section -->
+    <section id="gallery" class="selected-works-section section-padding">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">05 / PORTFOLIO</span>
+          <h2 class="section-title">Selected Works</h2>
+          <p class="section-description">A collection of banner and logo designs showcasing visual creativity, branding, layout composition, and attention to detail.</p>
+        </div>
+
+
+
+        <!-- Banner Collection -->
+        <div class="collection-section reveal">
+          <div class="collection-header">
+            <h3 class="collection-title">Banner Design Collection</h3>
+            <p class="collection-subtitle">A selection of promotional and campaign banners showcasing visual storytelling and design variety.</p>
+          </div>
+          <div class="banner-gallery">
+            <!-- Banner cards will be generated by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Lightbox Modal for Banners -->
+        <div id="banner-lightbox" class="lightbox-modal">
+          <button class="lightbox-close" aria-label="Close lightbox">
+            <i data-lucide="x"></i>
+          </button>
+          <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Banner Design" class="lightbox-image">
+          </div>
+          <div class="lightbox-nav">
+            <button class="lightbox-prev" aria-label="Previous image">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="lightbox-next" aria-label="Next image">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Logo Collection -->
+        <div class="collection-section reveal">
+          <div class="collection-header">
+            <h3 class="collection-title">Logo Design Concepts</h3>
+            <p class="collection-subtitle">Brand identity explorations featuring minimalist and modern design principles.</p>
+          </div>
+          <div class="logo-gallery">
+            <!-- Logo 1 -->
+            <div class="logo-card">
+              <div class="logo-placeholder logo-placeholder-1">E</div>
+              <div class="logo-info">
+                <h4 class="logo-name">EcoVibe</h4>
+                <p class="logo-tools">Figma, Illustrator</p>
+              </div>
+            </div>
+
+            <!-- Logo 2 -->
+            <div class="logo-card">
+              <div class="logo-placeholder logo-placeholder-2">N</div>
+              <div class="logo-info">
+                <h4 class="logo-name">Nexus Collective</h4>
+                <p class="logo-tools">Figma</p>
+              </div>
+            </div>
+
+            <!-- Logo 3 -->
+            <div class="logo-card">
+              <div class="logo-placeholder logo-placeholder-3">L</div>
+              <div class="logo-info">
+                <h4 class="logo-name">Luna Studios</h4>
+                <p class="logo-tools">Figma, Adobe XD</p>
+              </div>
+            </div>
+
+            <!-- Logo 4 -->
+            <div class="logo-card">
+              <div class="logo-placeholder logo-placeholder-4">P</div>
+              <div class="logo-info">
+                <h4 class="logo-name">Pulse Digital</h4>
+                <p class="logo-tools">Illustrator, Figma</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-content text-center-desktop">
+            <span class="badge bg-green-accent">Start a project</span>
+            <h2 class="contact-title">Let's create something memorable together.</h2>
+            <p class="contact-subtitle">I'm currently accepting new projects, contract opportunities, and collaborations. Reach out to schedule a call or grab a digital coffee.</p>
+            
+            <div class="contact-action">
+              <a href="mailto:villarin.queen22@gmail.com" class="contact-email">villarin.queen22@gmail.com</a>
+              <div class="contact-arrow">
+                <i data-lucide="arrow-down-right"></i>
+              </div>
+            </div>
+            
+            <div class="contact-socials">
+              <a href="#" class="social-link" aria-label="LinkedIn Profile">
+                <i data-lucide="linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub Profile">
+                <i data-lucide="github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Dribbble Portfolio">
+                <i data-lucide="dribbble"></i>
+                <span>Dribbble</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Figma Profile">
+                <i data-lucide="figma"></i>
+                <span>Figma</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">&copy; 2026 Queen S. Villarin. Built with care and clean code.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="back-to-top">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
     </div>
+  </footer>
 
-
-
-<script src="js/script.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
 </body>
 </html>

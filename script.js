@@ -39,9 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // SCROLL-EFFECTED ACTIONS (HEADER STICKY STATE)
+  // SCROLL-EFFECTED ACTIONS (HEADER STICKY STATE) - THROTTLED
   // ==========================================================================
   const header = document.getElementById('header');
+  let isScrolling = false;
   
   function handleScroll() {
     if (window.scrollY > 50) {
@@ -51,7 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+      window.requestAnimationFrame(() => {
+        handleScroll();
+        isScrolling = false;
+      });
+      isScrolling = true;
+    }
+  });
   // Trigger initially in case page loaded already scrolled
   handleScroll();
 
@@ -140,50 +149,72 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxPrev = document.querySelector('.lightbox-prev');
   const lightboxNext = document.querySelector('.lightbox-next');
   
-  // Banner data - in a real scenario, you could fetch this from an API
+  // Banner data - recruiter-friendly assets, categories, and descriptions
   const banners = [
     {
       id: 1,
-      name: 'Tech Summit 2026',
+      name: 'Shampoo Commercial Banner',
+      category: 'Product Banner Practice',
+      description: 'Created as a product advertising banner practice, focusing on soft visuals, product placement, typography, and promotional composition.',
+      tools: 'Figma, Adobe Photoshop',
       path: 'assets/img/collections/banner/banner1.png'
     },
     {
       id: 2,
-      name: 'Product Launch Campaign',
+      name: 'Minimal Shampoo Banner',
+      category: 'Minimal Promotional Banner',
+      description: 'Designed as a simple and clean shampoo promotional banner, focusing on minimal layout, visual spacing, product emphasis, and readability.',
+      tools: 'Figma, Canva',
       path: 'assets/img/collections/banner/banner2.png'
     },
     {
       id: 3,
-      name: 'Seasonal Promotion',
+      name: 'Matcha Latte Banner',
+      category: 'Café Promotional Banner Practice',
+      description: 'Created as a café-themed promotional banner practice, focusing on Japanese-inspired typography, product presentation, color harmony, and visual balance.',
+      tools: 'Figma, Adobe Photoshop',
       path: 'assets/img/collections/banner/banner3.png'
     }
   ];
   
   let currentBannerIndex = 0;
   
-  // Generate banner cards
+  // Generate banner cards with detailed recruiter-friendly layout
   function renderBannerGallery() {
+    if (!bannerGalleryContainer) return;
     bannerGalleryContainer.innerHTML = '';
     
     banners.forEach((banner, index) => {
       const bannerCard = document.createElement('div');
-      bannerCard.className = 'banner-card';
+      bannerCard.className = 'gallery-card';
       bannerCard.innerHTML = `
-        <img 
-          src="${banner.path}" 
-          alt="${banner.name}" 
-          class="banner-card-image"
-          loading="lazy"
-        >
-        <div class="banner-card-overlay">
-          <span class="banner-overlay-text">
-            View
-            <i data-lucide="expand"></i>
-          </span>
+        <div class="gallery-card-image-wrap">
+          <img 
+            src="${banner.path}" 
+            alt="${banner.name}" 
+            class="gallery-card-image"
+            loading="lazy"
+            decoding="async"
+          >
+          <div class="gallery-card-overlay">
+            <span class="gallery-overlay-btn">
+              <i data-lucide="maximize-2"></i> View Full Size
+            </span>
+          </div>
+        </div>
+        <div class="gallery-card-info">
+          <span class="gallery-card-category">${banner.category}</span>
+          <h4 class="gallery-card-title">${banner.name}</h4>
+          <p class="gallery-card-desc">${banner.description}</p>
+          <div class="gallery-card-tools">
+            <span class="tools-label">Tools:</span>
+            <span class="tools-list">${banner.tools}</span>
+          </div>
         </div>
       `;
       
-      bannerCard.addEventListener('click', () => openLightbox(index));
+      const imageWrap = bannerCard.querySelector('.gallery-card-image-wrap');
+      imageWrap.addEventListener('click', () => openLightbox(index));
       bannerGalleryContainer.appendChild(bannerCard);
     });
     

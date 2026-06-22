@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Queen S. Villarin, a Front-end Web Developer & UI/UX Designer with 2+ years of experience in responsive web design, front-end implementation, and WordPress management.">
-  <title>Queen S. Villarin — Front-end Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Queen S. Villarin, a Front-end Web Developer / UI Designer specializing in responsive websites, UI design, WordPress, and visual design.">
+  <meta name="keywords" content="Queen S. Villarin, Front-end Web Developer, UI Designer, UI/UX Designer, Web Designer, WordPress Designer, Portfolio, Figma, HTML, CSS, JavaScript">
+  <title>Queen S. Villarin — Front-end Web Developer / UI Designer</title>
+  
+  <!-- OpenGraph metadata for social sharing -->
+  <meta property="og:title" content="Queen S. Villarin — Front-end Web Developer / UI Designer">
+  <meta property="og:description" content="Portfolio of Queen S. Villarin, specializing in responsive websites, UI design, WordPress, and visual assets.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero_vector.png">
+  
+  <!-- Twitter Card metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Queen S. Villarin — Front-end Web Developer / UI Designer">
+  <meta name="twitter:description" content="Portfolio of Queen S. Villarin, specializing in responsive websites, UI design, WordPress, and visual assets.">
+  <meta name="twitter:image" content="assets/img/hero_vector.png">
+  
+  <!-- Emoji favicon (👑) to avoid 404 delays -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+  
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="styles.css" as="style">
   
   <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,18 +89,25 @@
           <div class="hero-content reveal">
             <span class="badge">Available for freelance & full-time roles</span>
             <h1 class="hero-title">
-              Designing  <span class="text-accent">and developing </span> <span class="text-accent-secondary"> modern web </span>experiences.
+              Front-end Web Developer <span class="text-accent">/</span> UI Designer
             </h1>
             <p class="hero-description">
-              Hello, I'm Queen S. Villarin, a Front-end Developer and UI Designer with experience in creating responsive websites, user-friendly interfaces, and modern web layouts using Figma, HTML, CSS, and WordPress.
+              Hello, I'm Queen S. Villarin. I design and build responsive websites, clean user interfaces, and custom WordPress sites.
             </p>
             <div class="hero-ctas">
               <a href="#projects" class="btn btn-primary">
                 View Projects
                 <i data-lucide="arrow-up-right" class="btn-icon"></i>
               </a>
-              <a href="#about" class="btn btn-tertiary">
-                More about me
+              <a href="#gallery" class="btn btn-secondary">
+                View Design Gallery
+              </a>
+              <a href="assets/Queen_Villarin_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="download" class="btn-icon" style="margin-left: 0; margin-right: var(--space-xs); transform: none;"></i>
+                Download Resume
+              </a>
+              <a href="#contact" class="btn btn-tertiary">
+                Contact Me
               </a>
             </div>
           </div>
@@ -89,7 +115,7 @@
           <div class="hero-illustration-container reveal">
             <div class="hero-illustration-wrapper">
               <div class="hero-grid-pattern"></div>
-              <!-- <img src="assets/img/hero_vector.png" alt="Queen S. Villarin Portrait Illustration" class="hero-vector-img"> -->
+              <img src="assets/img/hero_vector.png" alt="Queen S. Villarin Portrait Illustration" class="hero-vector-img" decoding="async">
             </div>
           </div>
         </div>
@@ -106,17 +132,17 @@
         <div class="grid grid-2-col">
           <div class="section-header reveal">
             <span class="section-subtitle">01 / ABOUT ME</span>
-            <h2 class="section-title">Bridging creative vision and technical execution.</h2>
+            <h2 class="section-title">Focused on clean layouts and functional web design.</h2>
           </div>
           <div class="about-content reveal">
             <p class="paragraph-lead">
-              I specialize in designing intuitive user interfaces and building them into responsive, high-performance web applications.
+              I design clean, user-friendly interfaces and build them into responsive, modern websites.
             </p>
             <p class="paragraph-body">
-              I am a Front-end Web Developer and UI/UX Designer with 2+ years of experience specializing in responsive web design, front-end implementation, and WordPress management. I focus on bridging the gap between functional layout structure and modern visual aesthetics to create highly user-friendly digital products.
+              I am a Front-end Web Developer and UI Designer with over 2 years of experience specializing in responsive web design, front-end implementation, and WordPress site management. I focus on combining clear visual design with practical development to create intuitive, clean, and accessible websites.
             </p>
             <p class="paragraph-body">
-              Using Figma for prototyping and interface design, combined with modern HTML, CSS, JavaScript, and WordPress, I build high-performance websites. My methodology ensures that every project is responsive, accessible, and structured for optimal usability.
+              Using Figma for layouts and prototyping, combined with HTML, CSS, JavaScript, and WordPress, I build websites that perform well and look visually balanced. Whether customizing themes, updating in-game assets, or designing responsive layouts, I focus on details that improve the overall user experience.
             </p>
           </div>
         </div>
@@ -186,11 +212,11 @@
       <div class="container">
         <div class="projects-header grid grid-2-col align-end">
           <div class="section-header reveal">
-            <span class="section-subtitle">03 / SELECTED WORKS</span>
-            <h2 class="section-title">Case studies and digital creations</h2>
+            <span class="section-subtitle">03 / PROJECTS</span>
+            <h2 class="section-title">Projects / Case Studies</h2>
           </div>
           <div class="projects-intro reveal">
-            <p class="paragraph-body">A curated collection of web applications and interactive systems that combine user-first UX/UI design with robust front-end architectures.</p>
+            <p class="paragraph-body">A curated collection of websites, landing pages, and UI layouts, combining design mockups with responsive frontend development.</p>
           </div>
         </div>
 
@@ -200,7 +226,7 @@
             <div class="project-image-container">
               <div class="project-overlay"></div>
               <div class="moodboard-container proj-bg-1">
-                <img src="assets/img/moodboard.png" alt="iDate Revival PH Moodboard Design" class="moodboard-img" loading="lazy">
+                <img src="assets/img/moodboard.png" alt="iDate Revival PH Moodboard Design" class="moodboard-img" loading="lazy" decoding="async">
               </div>
             </div>
             <div class="project-info">
@@ -212,15 +238,11 @@
               </div>
               <h3 class="project-card-title">iDate Revival PH Landing Page</h3>
               <div class="project-details-list" style="margin-bottom: var(--space-sm); font-size: 0.9rem; color: var(--color-text-muted);">
-                <div style="margin-bottom: 0.2rem;"><strong>Project Type:</strong> Website Design / Game Website Landing Page</div>
-                <div style="margin-bottom: 0.2rem;"><strong>Role:</strong> UI Designer, Game Client Developer</div>
-                <div><strong>Status:</strong> Initial Design / Team-enhanced Final Version</div>
+                <div style="margin-bottom: 0.2rem;"><strong>Project Type:</strong> Game Landing Page Design</div>
+                <div style="margin-bottom: 0.2rem;"><strong>Role:</strong> UI Designer / Game Client Developer</div>
+                <div><strong>Project Label:</strong> Community-based Project (Initial Design / Team-enhanced Version)</div>
               </div>
-              <p class="project-card-desc">Designed a highly interactive and visually rich game landing page. Crafted visual mockups, UI elements, and structural game character presentation layouts in Figma, aligning with development handoff specifications for the final team-integrated client version.</p>
-              <a href="#" class="project-link">
-                Explore Design
-                <i data-lucide="arrow-right"></i>
-              </a>
+              <p class="project-card-desc">Designed an interactive game landing page concept. Crafted visual mockups, UI elements, and structural game character layouts in Figma, aligning with community requirements and client assets.</p>
             </div>
           </article>
 
@@ -240,17 +262,18 @@
                 <span class="project-num">02</span>
                 <div class="project-tech">
                   <span>Figma</span> 
-                  <span>CSS Variables</span>
                   <span>HTML</span>
+                  <span>CSS</span>
                   <span>WordPress</span>
                 </div>
               </div>
               <h3 class="project-card-title">Japanese Dessert Website Concept</h3>
-              <p class="project-card-desc">A personal web design concept inspired by traditional Japanese desserts and modern café aesthetics. Designed in Figma and developed using HTML and CSS, focusing on visual hierarchy, typography, image presentation, and responsive user experience.</p>
-              <a href="#" class="project-link">
-                Explore Design
-                <i data-lucide="arrow-right"></i>
-              </a>
+              <div class="project-details-list" style="margin-bottom: var(--space-sm); font-size: 0.9rem; color: var(--color-text-muted);">
+                <div style="margin-bottom: 0.2rem;"><strong>Project Type:</strong> Web Design & Front-end Development</div>
+                <div style="margin-bottom: 0.2rem;"><strong>Role:</strong> Web Designer / Front-end Developer</div>
+                <div><strong>Project Label:</strong> UI Practice Project / Personal Concept Project</div>
+              </div>
+              <p class="project-card-desc">A personal web design concept inspired by traditional Japanese desserts and modern café aesthetics. Designed in Figma and developed using HTML, CSS, and WordPress elements, focusing on visual hierarchy, typography, and responsive user experience.</p>
             </div>
           </article>
 
@@ -258,10 +281,12 @@
           <article class="project-card reveal">
             <div class="project-image-container">
               <div class="project-overlay"></div>
-              <div class="project-image-placeholder proj-bg-3">
+              <div class="project-image-placeholder">
                 <div class="project-mockup-details">
-                  <span class="mockup-tag">eCommerce UI</span>
-                  <span class="mockup-title">LUMINA STORE</span>
+                  <video class="project-video" autoplay muted loop playsinline>
+                  <source src="assets/video/best_design_company.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 </div>
               </div>
             </div>
@@ -269,18 +294,20 @@
               <div class="project-meta">
                 <span class="project-num">03</span>
                 <div class="project-tech">
-                  <span>Figma</span>
-                  <span>Vanilla JS</span>
-                  <span>WordPress Headless</span>
-                  <span>GSAP</span>
+                  <span>Figma</span> 
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>WordPress</span>
                 </div>
               </div>
-              <h3 class="project-card-title">Lumina Digital Storefront</h3>
-              <p class="project-card-desc">A premium checkout-optimized eCommerce experiment focusing on elegant layout transitions, minimal screen clutter, and extremely lightweight client-side state handling.</p>
-              <!-- <a href="#" class="project-link">
-                Explore Case Study
-                <i data-lucide="arrow-right"></i>
-              </a> -->
+              <h3 class="project-card-title">Corporate Website Showcase</h3>
+              <div class="project-details-list" style="margin-bottom: var(--space-sm); font-size: 0.9rem; color: var(--color-text-muted);">
+                <div style="margin-bottom: 0.2rem;"><strong>Project Type:</strong> Responsive Website Design & Front-end Development</div>
+                <div style="margin-bottom: 0.2rem;"><strong>Role:</strong> UI Designer</div>
+                <div><strong>Project Label:</strong> UI Practice Project / Personal Concept Project</div>
+              </div>
+              <p class="project-card-desc">A responsive corporate website developed from Figma designs and implemented using HTML, CSS, and WordPress. The project focused on clean layouts, responsive design, content structure, and user-friendly navigation for business websites.
+</p>
             </div>
           </article>
         </div>
@@ -356,13 +383,13 @@
       </div>
     </section>
 
-    <!-- Selected Works Section -->
+    <!-- Design Gallery Section -->
     <section id="gallery" class="selected-works-section section-padding">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-subtitle">05 / PORTFOLIO</span>
-          <h2 class="section-title">Selected Works</h2>
-          <p class="section-description">A collection of banner and logo designs showcasing visual creativity, branding, layout composition, and attention to detail.</p>
+          <span class="section-subtitle">05 / GALLERY</span>
+          <h2 class="section-title">Design Gallery</h2>
+          <p class="section-description">A showcase of visual assets, including promotional banners, logos, in-game banners, and brand graphics.</p>
         </div>
 
 
@@ -370,8 +397,8 @@
         <!-- Banner Collection -->
         <div class="collection-section reveal">
           <div class="collection-header">
-            <h3 class="collection-title">Banner Design Collection</h3>
-            <p class="collection-subtitle">A selection of promotional and campaign banners showcasing visual storytelling and design variety.</p>
+            <h3 class="collection-title">Promotional Banner Designs</h3>
+            <p class="collection-subtitle">A collection of practice banner designs created to explore layout composition, typography, product presentation, and visual hierarchy.</p>
           </div>
           <div class="banner-gallery">
             <!-- Banner cards will be generated by JavaScript -->
@@ -399,51 +426,71 @@
         <!-- Logo Collection -->
         <div class="collection-section reveal">
           <div class="collection-header">
-            <h3 class="collection-title">Logo Design Concepts</h3>
-            <p class="collection-subtitle">Brand identity explorations featuring minimalist and modern design principles.</p>
+            <h3 class="collection-title">Commissioned Logo Designs</h3>
+            <p class="collection-subtitle">A collection of commissioned logo and text-based design concepts created for in-game banner use, focusing on stylized typography, readability, and visual identity.</p>
           </div>
           <div class="logo-gallery">
             <!-- Logo 1 -->
-            <div class="logo-card">
+            <div class="gallery-card">
               <div class="logo-placeholder">
-                <img src="assets/img/collections/logo/KYUUPEE.png" alt="">
+                <img src="assets/img/collections/logo/KYUUPEE.png" alt="Kyuupee logo design" loading="lazy" decoding="async">
               </div>
-              <div class="logo-info">
-                <h4 class="logo-name">Kyuupee</h4>
-                <p class="logo-tools">Illustrator</p>
+              <div class="gallery-card-info">
+                <span class="gallery-card-category">Logo Banner Commission</span>
+                <h4 class="gallery-card-title">Kyuupee</h4>
+                <p class="gallery-card-desc">Designed as a commissioned in-game logo banner, focusing on playful typography, soft visual styling, and readable text treatment.</p>
+                <div class="gallery-card-tools">
+                  <span class="tools-label">Tools:</span>
+                  <span class="tools-list">Adobe Illustrator</span>
+                </div>
               </div>
             </div>
 
             <!-- Logo 2 -->
-            <div class="logo-card">
+            <div class="gallery-card">
               <div class="logo-placeholder">
-                <img src="assets/img/collections/logo/DEVELOPER.png" alt="">
+                <img src="assets/img/collections/logo/DEVELOPER.png" alt="Developer logo design" loading="lazy" decoding="async">
               </div>
-              <div class="logo-info">
-                <h4 class="logo-name">Developer</h4>
-                <p class="logo-tools">Figma</p>
+              <div class="gallery-card-info">
+                <span class="gallery-card-category">In-Game Logo Design</span>
+                <h4 class="gallery-card-title">Developer Logo</h4>
+                <p class="gallery-card-desc">Created as a commissioned text-based logo for in-game banner use, focusing on stylized typography, balanced spacing, and clear visual presentation.</p>
+                <div class="gallery-card-tools">
+                  <span class="tools-label">Tools:</span>
+                  <span class="tools-list">Figma</span>
+                </div>
               </div>
             </div>
 
             <!-- Logo 3 -->
-            <div class="logo-card">
+            <div class="gallery-card">
               <div class="logo-placeholder">
-                <img src="assets/img/collections/logo/ARTMASTER.png" alt="">
+                <img src="assets/img/collections/logo/ARTMASTER.png" alt="Art Master logo design" loading="lazy" decoding="async">
               </div>
-              <div class="logo-info">
-                <h4 class="logo-name">Art Master</h4>
-                <p class="logo-tools">Figma</p>
+              <div class="gallery-card-info">
+                <span class="gallery-card-category">Commissioned Logo Concept</span>
+                <h4 class="gallery-card-title">Art Master</h4>
+                <p class="gallery-card-desc">Designed as a custom logo concept for in-game use, focusing on creative text styling, visual balance, and decorative presentation.</p>
+                <div class="gallery-card-tools">
+                  <span class="tools-label">Tools:</span>
+                  <span class="tools-list">Figma</span>
+                </div>
               </div>
             </div>
 
             <!-- Logo 4 -->
-            <div class="logo-card">
+            <div class="gallery-card">
               <div class="logo-placeholder">
-                <img src="assets/img/collections/logo/SKILLISSUE.png" alt="">
+                <img src="assets/img/collections/logo/SKILLISSUE.png" alt="Skill Issue logo design" loading="lazy" decoding="async">
               </div>
-              <div class="logo-info">
-                <h4 class="logo-name">Skill Issue</h4>
-                <p class="logo-tools">Figma</p>
+              <div class="gallery-card-info">
+                <span class="gallery-card-category">Text Logo Commission</span>
+                <h4 class="gallery-card-title">Skill Issue</h4>
+                <p class="gallery-card-desc">Created as a playful commissioned logo for in-game banner use, focusing on bold typography, strong contrast, and clean composition.</p>
+                <div class="gallery-card-tools">
+                  <span class="tools-label">Tools:</span>
+                  <span class="tools-list">Figma</span>
+                </div>
               </div>
             </div>
           </div>
